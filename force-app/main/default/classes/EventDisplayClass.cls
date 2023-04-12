@@ -8,6 +8,7 @@ public with sharing class EventDisplayClass {
         // lstMyEvent = [SELECT Id, Student_Name__c, Postal_Code__c, Class__c, Mobile__c, Email__c FROM Student__c WHERE Postal_Code__c Like : NewPstlCode ];
         // // return lstMyEvent;
         system.debug('gfg');
+        system.debug('gfg222');
         
     }
 
