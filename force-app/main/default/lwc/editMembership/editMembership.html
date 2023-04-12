@@ -1,0 +1,25 @@
+<template>
+
+    <template if:true={errors}>
+        {errors}
+    </template>
+
+    <!-- <p>Current Id = {recordId}</p>
+    <p>Selected Id = {selection}</p> -->
+
+    <lightning-datatable
+    key-field="id"
+    data={events}
+    columns={columnList}
+    ></lightning-datatable>
+
+    <br>
+
+    <lightning-button
+    label="Handle it"
+    title="Handle it"
+    onclick={clickHandler}
+    class="slds-m-left_x-small"
+    ></lightning-button>
+    
+</template>

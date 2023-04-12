@@ -1,0 +1,50 @@
+<template>
+
+    <lightning-card title="Event Create">
+        <div class="slds-p-around_medium">
+
+        <lightning-record-edit-form
+        object-api-name={objApiName}>
+
+        <lightning-input-field
+        field-name="Name__c"
+        onchange={nameHandler}
+        ></lightning-input-field>
+
+        <lightning-input-field
+        field-name="Event_Organizer__c"
+        onchange={organizerHandler}
+        ></lightning-input-field>
+
+        <lightning-input-field
+        field-name="Start_Date_Time__c"
+        onchange={startDateHandler}
+        ></lightning-input-field>
+
+        <lightning-input-field
+        field-name="End_Date_Time__c"
+        onchange={endDateHandler}
+        ></lightning-input-field>
+
+        <lightning-input-field
+        field-name="Max_Seats__c"
+        onchange={seatsHandler}
+        ></lightning-input-field>
+
+        <lightning-input-field
+        field-name="Event_Detail__c"
+        onchange={detailHandler}
+        ></lightning-input-field>
+
+        <lightning-button
+        label="Create Record"
+        variant="brand"
+        onclick={clickHandler}
+        class="slds-align_absolute-center"
+        ></lightning-button>
+
+        </lightning-record-edit-form>
+    </div>
+    </lightning-card>
+    
+</template>

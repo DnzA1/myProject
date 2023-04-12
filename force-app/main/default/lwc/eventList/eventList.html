@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Upcoming Eventsss" icon-name="standard:event">
+        <div class="slds-var-m-around_medium">
+
+            <template if:true={erorrs}>
+                {errors}
+            </template>
+
+            <c-searcher
+            cmp-label="Event Name"
+            show-label="true"
+            onsearch={handleSearch}
+            ></c-searcher>
+        <br>
+
+        <lightning-input
+        type="datetime"
+        label="Start Date Time"
+        onchange={handleStartDate}
+    ></lightning-input>
+
+    <c-searcher
+    cmp-label="Event Location"
+        show-label="true"
+        onsearch={handleLocationSearch}
+        ></c-searcher>
+        
+        <lightning-datatable
+        key-field="id"
+        data={recordsToDisplay}
+        columns={columnList}
+        show-row-number-column
+        hide-checkbox-column
+        ></lightning-datatable>
+        
+    </div>
+    </lightning-card>
+</template>
