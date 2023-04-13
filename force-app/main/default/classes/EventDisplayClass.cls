@@ -2,6 +2,7 @@ public with sharing class EventDisplayClass {
     @AuraEnabled
     public static void searchMyEventName(String eventName){
         // List<MyEvent__c> lstMyEvent = new List<MyEvent__c>(); 
+        // List<MyEvent__c> lstMyEvent = new List<MyEvent__c>(); 
 
         // String NewEventName = '%'+ eventName +'%'; 
 
