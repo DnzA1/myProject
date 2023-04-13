@@ -3,6 +3,7 @@ public with sharing class EventDisplayClass {
     public static void searchMyEventName(String eventName){
         // List<MyEvent__c> lstMyEvent = new List<MyEvent__c>(); 
         // List<MyEvent__c> lstMyEvent = new List<MyEvent__c>(); 
+        // List<MyEvent__c> lstMyEvent = new List<MyEvent__c>(); oneeeee
 
         // String NewEventName = '%'+ eventName +'%'; 
 
